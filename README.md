@@ -7,9 +7,8 @@ This project, contained within the `audio-cnn` directory, aims to detect the pre
 ## Project Structure
 
 - **`audio-cnn/`**: Root directory containing all project files.
-  - **`audio_reference_sound_detection.py`**: Main script for training the CNN model and making predictions.
-  - **`predict_reference_sound.py`**: Script for predicting the presence of a reference sound in new audio files.
-  - **`tests/`**: Directory containing all `pytest` test scripts for validating various aspects of the project.
+  - **`model.py`**: Main script for training the CNN model and making predictions based on new audio files.
+  - **`tests/`**: Directory containing all `pytest` test scripts for validating various testing aspects of the project.
     - **`tests/test_functionality.py`**: Ensures that the main functionalities of the system work as expected.
     - **`tests/test_integration.py`**: Verifies the integration between different components of the system.
     - **`tests/test_performance.py`**: Tests the performance and efficiency of the model under various conditions.
