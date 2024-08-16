@@ -32,3 +32,13 @@ To use this project, you'll need to have Python 3.6 or higher installed. Follow 
    ```bash
    git clone https://github.com/yourusername/audio-cnn.git
    cd audio-cnn
+
+Training the Model:
+Run the main script to train the CNN model using your custom dataset:
+python model.py
+Running Tests:
+Execute the pytest tests to validate the functionality, performance, and reliability of the system:
+pytest --html=report.html
+Making Predictions:
+Use the trained model to predict whether a reference sound is present in a new recording by running:
+python predict_reference_sound.py <path_to_audio_file>
