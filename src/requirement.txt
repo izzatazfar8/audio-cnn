@@ -1,0 +1,9 @@
+numpy
+librosa
+tensorflow
+scikit-learn
+matplotlib
+pytest
+pytest-html (for generating test reports)
+
+
