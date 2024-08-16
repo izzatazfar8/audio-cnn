@@ -30,17 +30,17 @@ def load_custom_dataset(file_paths, labels, n_mfcc=13, max_length=174):
 
 # Example file paths and labels
 file_paths = [
-    'C:/Users/izulhish/Downloads/audio-cnn/recorded/16_LE_stereo_sine.wav',
-    'C:/Users/izulhish/Downloads/audio-cnn/recorded/32_LE_stereo_sine.wav',
-    'C:/Users/izulhish/Downloads/audio-cnn/recorded/recorded-sine.wav',
-    'C:/Users/izulhish/Downloads/audio-cnn/noise/noise.wav',
-    'C:/Users/izulhish/Downloads/audio-cnn/noise/radio-electro-glitch.wav',
-    'C:/Users/izulhish/Downloads/audio-cnn/noise/granular-noise-crackle.wav',
-    'C:/Users/izulhish/Downloads/audio-cnn/noise/harsh-radio-static.wav',
-    'C:/Users/izulhish/Downloads/audio-cnn/noise/radio-stutter-noise.wav',
-    'C:/Users/izulhish/Downloads/audio-cnn/noise/white-noise.wav',
-    'C:/Users/izulhish/Downloads/audio-cnn/recorded/16bits.wav',
-    'C:/Users/izulhish/Downloads/audio-cnn/recorded/32bits.wav'
+    '<path to reference sound>',
+    '<path to reference sound>v',
+    '<path to reference sound>',
+    '<path to noise sound>',
+    '<path to noise sound>',
+    '<path to noise sound>',
+    '<path to noise sound>',
+    '<path to noise sound>',
+    '<path to noise sound>',
+    '<path to reference sound>',
+    '<path to reference sound>'
     
 ]
 labels = [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1]  # Corresponding labels (1 for reference sound, 0 for non-reference sound)
@@ -129,16 +129,8 @@ def predict_reference_sound(model, file_path, max_length, threshold=0.8):
     return prediction > threshold
 
 # Example prediction
-new_recorded_file = 'C:/Users/izulhish/Downloads/audio-cnn/recorded/recorded-sine-1.wav'
-#new_recorded_file = '/home/rpl2/izzat/recorded/recorded-sine-2.wav'
-#new_recorded_file = '/home/rpl2/izzat/recorded/recorded-sine-3-minor-noise.wav'
-#new_recorded_file = '/home/rpl2/izzat/recorded/recorded-sine-4.wav'
-#new_recorded_file = '/home/rpl2/izzat/recorded/recorded-sine-5-clean.wav'
-#new_recorded_file = '/home/rpl2/izzat/recorded/recorded-sine-6-minor-noise.wav'
-#new_recorded_file = '/home/rpl2/izzat/recorded/recorded-surroundings.wav'
-#new_recorded_file = '/home/rpl2/izzat/recorded/recorded-glitch.wav'
-#new_recorded_file = '/home/rpl2/izzat/recorded/recorded-totally-noise.wav'
-#new_recorded_file = '/home/rpl2/izzat/recorded/recorded-nothing.wav'
+new_recorded_file = '<path to new recorded sound>'
+
 
 is_present = predict_reference_sound(model, new_recorded_file, max_length=max_length)
 
