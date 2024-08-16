@@ -82,3 +82,10 @@ This AI model can be applied in various fields, including:
 2. Noise Monitoring: Identifying and filtering out unwanted noise in real-time audio streams.
 3. Automated Audio Tagging: Automatically tagging audio files based on the presence of specific reference sounds.
 
+
+## MANUAL TESTING
+1. Manually inspect the audio data before and after processing to ensure there is no data corruption.
+2. Manually run the script on different Python versions to ensure backward and forward compatibility.
+3. Check if error messages, logs, and outputs provide sufficient information for troubleshooting.
+4. Manually introduce adversarial noise or perturbations into the audio files to test how resilient the model is to these changes.(Manual Negative tests)
+5. Test the system’s ability to resume operations after an unexpected interruption, such as a power failure or software crash.
